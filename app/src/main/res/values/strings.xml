@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Clothing Store</string>
+    <string name="color">Color</string>
+    <string name="size">Size</string>
+</resources>
