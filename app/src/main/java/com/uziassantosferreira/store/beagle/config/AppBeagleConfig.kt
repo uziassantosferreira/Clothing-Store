@@ -1,4 +1,4 @@
-package com.uziassantosferreira.store.beagle
+package com.uziassantosferreira.store.beagle.config
 
 import br.com.zup.beagle.android.annotation.BeagleComponent
 import br.com.zup.beagle.android.setup.BeagleConfig
