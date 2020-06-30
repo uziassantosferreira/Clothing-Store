@@ -1,7 +1,7 @@
 package com.uziassantosferreira.store
 
 import android.app.Application
-import com.uziassantosferreira.store.beagle.BeagleSetup
+import com.uziassantosferreira.store.beagle.config.BeagleSetup
 
 class AppApplication : Application() {
 

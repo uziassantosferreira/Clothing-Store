@@ -1,4 +1,4 @@
-package com.uziassantosferreira.store.beagle
+package com.uziassantosferreira.store.beagle.config
 
 import android.os.Bundle
 import android.view.View

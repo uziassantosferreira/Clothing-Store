@@ -23,7 +23,7 @@
 
 
         <activity
-            android:name=".beagle.AppBeagleActivity"
+            android:name=".beagle.config.AppBeagleActivity"
             android:screenOrientation="portrait" />
     </application>
 
