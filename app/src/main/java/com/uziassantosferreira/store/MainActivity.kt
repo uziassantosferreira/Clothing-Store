@@ -3,7 +3,6 @@ package com.uziassantosferreira.store
 import android.os.Bundle
 import android.widget.Button as ButtonAndroid
 import androidx.appcompat.app.AppCompatActivity
-import br.com.zup.beagle.android.action.Alert
 import br.com.zup.beagle.android.action.Navigate
 import br.com.zup.beagle.android.action.Route
 import br.com.zup.beagle.android.components.Button
@@ -11,7 +10,6 @@ import br.com.zup.beagle.android.components.Image
 import br.com.zup.beagle.android.components.PathType
 import br.com.zup.beagle.android.components.layout.Container
 import br.com.zup.beagle.android.components.layout.NavigationBar
-import br.com.zup.beagle.android.components.layout.NavigationBarItem
 import br.com.zup.beagle.android.components.layout.Screen
 import br.com.zup.beagle.android.view.BeagleActivity
 import br.com.zup.beagle.core.CornerRadius
@@ -33,14 +31,16 @@ class MainActivity : AppCompatActivity() {
         findViewById<ButtonAndroid>(R.id.buttonBeagle).setOnClickListener {
             startActivity(
                 BeagleActivity.newIntent(
-                    this, screen = Screen(
-                        navigationBar = navBar(),
-                        child = screenWidgets()
-                    )
+                    this, screen = provideDetailScreen()
                 )
             )
         }
     }
+
+    private fun provideDetailScreen() = Screen(
+        navigationBar = navBar(),
+        child = screenWidgets()
+    )
 
     private fun navBar(): NavigationBar {
         return NavigationBar(
@@ -139,4 +139,3 @@ class MainActivity : AppCompatActivity() {
         )
     }
 }
-
