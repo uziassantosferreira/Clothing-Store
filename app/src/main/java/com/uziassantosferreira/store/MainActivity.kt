@@ -1,9 +1,8 @@
 package com.uziassantosferreira.store
 
 import android.os.Bundle
-import android.widget.Button
+import android.widget.Button as ButtonAndroid
 import androidx.appcompat.app.AppCompatActivity
-import br.com.zup.beagle.android.components.layout.Screen
 import br.com.zup.beagle.android.view.BeagleActivity
 
 class MainActivity : AppCompatActivity() {
@@ -12,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        findViewById<Button>(R.id.buttonBeagle).setOnClickListener {
+        findViewById<ButtonAndroid>(R.id.buttonBeagle).setOnClickListener {
             startActivity(BeagleActivity.newIntent(this, null))
         }
     }
