@@ -45,7 +45,7 @@
         <item name="backgroundColor">@color/colorWhite</item>
         <item name="navigationIcon">@drawable/ic_back</item>
         <item name="titleTextAppearance">@style/CustomTitleToolbar</item>
-        <item name="centerTitle">true</item>
+        <item name="centerTitle">false</item>
     </style>
 
     <style name="CustomTitleToolbar">

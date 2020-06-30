@@ -46,24 +46,7 @@ class MainActivity : AppCompatActivity() {
         return NavigationBar(
             title = "Title",
             styleId = "customNavigation",
-            navigationBarItems = listOf(
-                NavigationBarItem(
-                    text = "Heart Icon",
-                    image = PathType.Local("heart"),
-                    action = Alert(
-                        title = "Heart title",
-                        message = "Heart message"
-                    )
-                ),
-                NavigationBarItem(
-                    text = "Bag Icon",
-                    image = PathType.Local("bag"),
-                    action = Alert(
-                        title = "Bag title",
-                        message = "Bag message"
-                    )
-                )
-            )
+            showBackButton = true
         )
     }
 
